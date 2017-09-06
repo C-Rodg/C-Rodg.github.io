@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
+import "../styles/navigation.scss";
+
 const Navigation = () => {
 	return (
 		<div className="navigation">
@@ -12,7 +14,7 @@ const Navigation = () => {
 					<span className="light">Curtis. </span>Rodgers
 				</Link>
 			</div>
-			<div className="links">
+			<div className="nav-links">
 				<NavLink to="/about" activeClassName="nav-active">
 					About
 				</NavLink>

@@ -33,6 +33,7 @@ body {
 	font-family: $regular-font;
 	margin: 0;
 	padding: 0;
+	color: #333;
 }
 
 #container {
@@ -42,7 +43,7 @@ body {
 .app {
 	height: 100vh;
 	position: relative;
-	background-color: #f4f4f7;
+	background-color: #fff;
 }
 
 // ------ Animations ------ //

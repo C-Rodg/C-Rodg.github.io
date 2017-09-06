@@ -9,7 +9,7 @@ const Navigation = () => {
 			<div className="logo">
 				<img src={require("../assets/logo.png")} alt="Curtis Rodgers" />
 			</div>
-			<div className="name">
+			<div className="nav-title">
 				<Link to="/">
 					<span className="light">Curtis. </span>Rodgers
 				</Link>

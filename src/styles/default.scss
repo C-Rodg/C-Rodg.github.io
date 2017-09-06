@@ -1,0 +1,244 @@
+@import './variables';
+
+.default-app {
+	.header {
+		min-height: 87px;
+
+		.tabs {
+			color: $text-gray;
+			display: flex;
+
+			.tab {
+				user-select: none;
+				flex: 1;
+				padding: 8px 0 13px 0;
+				cursor: pointer;
+
+				.tab-icon,
+				.tab-title {
+					display: block;
+					line-height: 100%;
+				}
+
+				.tab-icon {
+					margin-bottom: 4px;
+
+					i {
+						font-size: 1.6rem;
+					}
+				}
+			}
+
+			.tab.tab-active {
+				color: $text-white;
+				border-bottom: 3px solid $text-white;
+			}
+		}
+	}
+
+	.content {
+		top: 113px;
+
+		.content-qr {
+			margin: 10px auto;
+		}
+
+		.card {
+			margin: 0 10px 10px 10px;
+			background-color: $text-white;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+				0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+			border-radius: 2px;
+
+			.card-content {
+				padding: 16px 16px 5px 16px;
+				text-align: center;
+
+				.qr-image {
+					text-align: center;
+					margin-bottom: 5px;
+					min-width: 199px;
+					min-height: 199px;
+				}
+
+				.qr-text {
+					color: $text-card-gray;
+					line-height: 1.5;
+				}
+
+				.qr-footer {
+					a {
+						display: inline-block;
+						color: $primary-dark;
+						font-family: $heavy-font;
+						line-height: 24px;
+						padding: 10px 15px;
+
+						i {
+							vertical-align: middle;
+							margin-right: 3px;
+						}
+					}
+				}
+			}
+		}
+
+		.card.nothing-found {
+			.card-content {
+				color: $off-black;
+				padding: 16px 10px;
+				text-align: center;
+				font-family: $heavy-font;
+			}
+		}
+
+		.content-agenda {
+			width: 100%;
+		}
+
+		.content-feedback {
+			flex-grow: 1;
+
+			iframe {
+				border: 0;
+				background-color: #000;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+		}
+
+		.agenda {
+			margin-right: 10px;
+			margin-left: 10px;
+
+			.agenda-day {
+				text-align: center;
+				display: flex;
+				font-family: $heavy-font;
+				color: $off-black;
+
+				.agenda-day-center {
+					flex: 1;
+					line-height: 1.2;
+				}
+
+				.agenda-arrow {
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					padding-left: 10px;
+					padding-right: 10px;
+
+					i {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+
+		.agenda-body {
+			position: relative;
+			margin: 15px 0;
+			padding: 0;
+			list-style: none;
+
+			.agenda-item {
+				position: relative;
+				margin-bottom: 25px;
+
+				.item-icon {
+					position: absolute;
+					top: 2px;
+					width: 28px;
+					height: 28px;
+					line-height: 28px;
+					background-color: $primary-dark;
+					border-radius: 50%;
+					box-shadow: 0 0 0 5px #d9d9d9;
+				}
+
+				.item-info {
+					margin-left: 45px;
+
+					.item-time {
+						font-family: $heavy-font;
+						font-size: 28px;
+						line-height: 1;
+						margin-bottom: 8px;
+						color: $off-black;
+					}
+
+					.item-card {
+						background-color: #fff;
+						border-radius: 2px;
+						border-left: 3px solid $primary-mid-2;
+						box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+							0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+						padding: 10px;
+						min-height: 40px;
+
+						.item-card-title {
+							font-family: $heavy-font;
+							color: $off-black;
+						}
+
+						.item-card-location {
+							color: $text-card-gray;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 8px;
+				background-color: #d9d9d9;
+				left: 10px;
+				border-radius: 2px;
+			}
+		}
+	}
+}
+
+// RTL Styles
+.default-app.rtl {
+	.tabs {
+		flex-direction: row-reverse;
+	}
+
+	.content .agenda-body {
+		text-align: right;
+
+		&::before {
+			content: none;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 8px;
+			background-color: #d9d9d9;
+			right: 10px;
+			border-radius: 2px;
+		}
+
+		.agenda-item {
+			.item-info {
+				margin-left: 0;
+				margin-right: 45px;
+			}
+
+			.item-icon {
+				right: 0;
+				z-index: 3;
+			}
+		}
+	}
+}

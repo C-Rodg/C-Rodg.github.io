@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 const Navigation = () => {
 	return (
@@ -7,14 +8,20 @@ const Navigation = () => {
 				<img src={require("../assets/logo.png")} alt="Curtis Rodgers" />
 			</div>
 			<div className="name">
-				<a href="index.html">
+				<Link to="/">
 					<span className="light">Curtis. </span>Rodgers
-				</a>
+				</Link>
 			</div>
 			<div className="links">
-				<a href="about.html">About</a>
-				<a href="work.html">Work</a>
-				<a href="contact.html">Contact</a>
+				<NavLink to="/about" activeClassName="nav-active">
+					About
+				</NavLink>
+				<NavLink to="/work" activeClassName="nav-active">
+					Work
+				</NavLink>
+				<NavLink to="/contact" activeClassName="nav-active">
+					Contact
+				</NavLink>
 			</div>
 		</div>
 	);

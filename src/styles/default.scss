@@ -14,6 +14,11 @@ a:hover {
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 input:focus,
 input:active,
 button:focus,
@@ -38,4 +43,82 @@ body {
 	height: 100vh;
 	position: relative;
 	background-color: #f4f4f7;
+}
+
+// ------ Animations ------ //
+@keyframes moveTop {
+	0% {
+		transform: translateX(-25px);
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes grow {
+	0% {
+		width: 125px;
+	}
+	50% {
+		width: 100%;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		width: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(100%);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes fadeIn {
+	60% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInSlow {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

@@ -16,7 +16,7 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "[name].bundle.js"
+		filename: "scripts/[name].bundle.js"
 	},
 	module: {
 		rules: [
@@ -75,11 +75,16 @@ module.exports = {
 			},
 			{
 				test: /\.woff(2)?(\?[a-z0-9#=&.]+)?$/,
-				loader: "url-loader?limit=10000&mimetype=application/font-woff"
+				loader:
+					"url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]"
 			},
 			{
-				test: /\.(ttf|eot|svg|png|jpg|ico)(\?[a-z0-9#=&.]+)?$/,
-				loader: "file-loader"
+				test: /\.(ttf|eot|svg)(\?[a-z0-9#=&.]+)?$/,
+				loader: "file-loader?name=fonts/[name].[ext]"
+			},
+			{
+				test: /\.(png|jpg|ico)(\?[a-z0-9#=&.]+)?$/,
+				loader: "file-loader?name=images/[name].[ext]"
 			},
 			{
 				test: /\.json$/,
@@ -89,7 +94,7 @@ module.exports = {
 	},
 	plugins: [
 		new ExtractTextPlugin({
-			filename: "[name].css?[hash]-[chunkhash]-[contenthash]-[name]",
+			filename: "styles/[name].css?[hash]-[chunkhash]-[contenthash]-[name]",
 			disable: false,
 			allChunks: true
 		}),

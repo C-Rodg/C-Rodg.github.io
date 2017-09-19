@@ -1,0 +1,126 @@
+.welcome-page {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	background-image: url("../assets/bg.png"); // FIX loading of background image..
+	background-size: cover;
+
+	img {
+		opacity: 0;
+		max-width: 300px;
+		margin: 15px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		animation: fadeIn 5.5s 2.5s 1 normal forwards;
+	}
+
+	.loadingBox {
+		border-top: 10px solid #3498db;
+		width: 125px;
+		margin: auto;
+	}
+
+	.spin {
+		animation: spin 3s linear 0.5s 1 normal;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 9;
+		overflow: hidden;
+	}
+
+	.grow {
+		animation: grow 4s linear 3.5s 1 normal forwards;
+	}
+
+	.upBox,
+	.downBox {
+		height: 50%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		background-color: #333;
+	}
+
+	.upBox {
+		top: 0;
+	}
+
+	.downBox {
+		bottom: 0;
+	}
+
+	.slideUp {
+		animation: slideUp 2s linear 5.5s 1 normal forwards;
+	}
+
+	.slideDown {
+		animation: slideDown 2s linear 5.5s 1 normal forwards;
+	}
+}
+
+// Welcome Loading Animations
+@keyframes grow {
+	0% {
+		width: 125px;
+	}
+	50% {
+		width: 100%;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		width: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(100%);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes fadeIn {
+	60% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInSlow {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

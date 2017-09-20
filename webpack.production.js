@@ -32,7 +32,8 @@ module.exports = {
 					fallback: "style-loader",
 					use: [
 						{
-							loader: "css-loader"
+							loader: "css-loader",
+							options: { sourceMap: false }
 						},
 						{
 							loader: "postcss-loader",
@@ -44,7 +45,12 @@ module.exports = {
 							}
 						},
 						{
-							loader: "sass-loader"
+							loader: "resolve-url-loader",
+							options: { sourceMap: false }
+						},
+						{
+							loader: "sass-loader",
+							options: { sourceMap: false }
 						}
 					]
 				})
@@ -55,7 +61,8 @@ module.exports = {
 					fallback: "style-loader",
 					use: [
 						{
-							loader: "css-loader"
+							loader: "css-loader",
+							options: { sourceMap: false }
 						},
 						{
 							loader: "postcss-loader",
@@ -65,6 +72,10 @@ module.exports = {
 								},
 								sourceMap: false
 							}
+						},
+						{
+							loader: "resolve-url-loader",
+							options: { sourceMap: false }
 						}
 					]
 				})
@@ -93,9 +104,10 @@ module.exports = {
 			"process.env": { NODE_ENV: JSON.stringify("production") }
 		}),
 		new ExtractTextPlugin({
-			filename: "styles/[name].css?[hash]-[chunkhash]-[contenthash]-[name]",
+			filename: "[name].css?[hash]-[chunkhash]-[contenthash]-[name]",
 			disable: false,
-			allChunks: true
+			allChunks: true,
+			publicPath: "/"
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: "vendor"

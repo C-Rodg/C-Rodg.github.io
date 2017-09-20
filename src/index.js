@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 
 import App from "./components/App";
+import "./styles/fonts/raleway/raleway.css";
+import "./styles/fonts/material-design-icons/material-icons.css";
 import "./styles/default.scss";
 
 ReactDOM.render(

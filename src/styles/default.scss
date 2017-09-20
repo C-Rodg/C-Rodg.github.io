@@ -1,5 +1,5 @@
-@import "./fonts/raleway/raleway";
-@import "./fonts/material-design-icons/material-icons";
+//@import "./fonts/raleway/raleway";
+//@import "./fonts/material-design-icons/material-icons";
 @import "./variables";
 
 // Overrrides
@@ -44,10 +44,12 @@ body {
 	height: 100vh;
 	position: relative;
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
-	height: 100%;
+	flex: 1;
 }
 
 // ------ Animations ------ //

@@ -17,6 +17,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "scripts/[name].bundle.js"
+		//publicPath: "./"
 	},
 	module: {
 		rules: [
@@ -35,7 +36,7 @@ module.exports = {
 					use: [
 						{
 							loader: "css-loader",
-							options: { sourceMap: true }
+							options: { sourceMap: true } // url: false
 						},
 						{
 							loader: "postcss-loader",
@@ -45,6 +46,10 @@ module.exports = {
 								},
 								sourceMap: true
 							}
+						},
+						{
+							loader: "resolve-url-loader",
+							options: { sourceMap: true }
 						},
 						{
 							loader: "sass-loader",
@@ -67,8 +72,12 @@ module.exports = {
 								plugins: function() {
 									return [require("autoprefixer")];
 								},
-								sourceMap: false
+								sourceMap: true
 							}
+						},
+						{
+							loader: "resolve-url-loader",
+							options: { sourceMap: true }
 						}
 					]
 				})
@@ -76,7 +85,10 @@ module.exports = {
 			{
 				test: /\.woff(2)?(\?[a-z0-9#=&.]+)?$/,
 				loader:
-					"url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]"
+					"url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]",
+				options: {
+					publicPath: "/"
+				}
 			},
 			{
 				test: /\.(ttf|eot|svg)(\?[a-z0-9#=&.]+)?$/,
@@ -94,9 +106,10 @@ module.exports = {
 	},
 	plugins: [
 		new ExtractTextPlugin({
-			filename: "styles/[name].css?[hash]-[chunkhash]-[contenthash]-[name]",
+			filename: "[name].css?[hash]-[chunkhash]-[contenthash]-[name]",
 			disable: false,
-			allChunks: true
+			allChunks: true,
+			publicPath: "/"
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: "vendor"

@@ -19,16 +19,34 @@
 		flex-basis: 300px;
 	}
 
+	.sub-row-title {
+		font-size: 1.7rem;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
 	.col-body {
 		flex: 1;
 		line-height: 150%;
 	}
 
 	.sub-row {
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 
 	.about-row {
 		display: flex;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-page {
+		.about-row {
+			flex-direction: column;
+		}
+		.col-title {
+			flex-basis: auto;
+			margin-bottom: 10px;
+		}
 	}
 }

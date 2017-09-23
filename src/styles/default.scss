@@ -53,6 +53,31 @@ main {
 .container {
 	max-width: 960px;
 	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.para-link {
+	text-decoration: underline;
+}
+
+.connect-icons {
+	a {
+		line-height: 48px;
+		margin: 0 10px;
+		cursor: pointer;
+	}
+	svg {
+		width: 48px;
+		height: 48px;
+	}
+
+	.icon--linkedin svg {
+		fill: #333;
+	}
+	a:hover svg {
+		animation: 1.2s floating infinite linear;
+	}
 }
 
 // ------ Animations ------ //
@@ -67,5 +92,17 @@ main {
 	100% {
 		transform: translateX(0px);
 		opacity: 1;
+	}
+}
+
+@keyframes floating {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	65% {
+		transform: translate3d(0, -8px, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
 	}
 }

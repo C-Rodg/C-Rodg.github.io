@@ -1,5 +1,3 @@
-//@import "./fonts/raleway/raleway";
-//@import "./fonts/material-design-icons/material-icons";
 @import "./variables";
 
 // Overrrides
@@ -50,6 +48,11 @@ body {
 
 main {
 	flex: 1;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 // ------ Animations ------ //

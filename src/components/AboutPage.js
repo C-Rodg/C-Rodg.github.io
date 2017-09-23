@@ -1,11 +1,13 @@
 import React from "react";
 
-//const Camera = require("react-feather/dist/icons/camera").default;
 const GitHub = require("react-feather/dist/icons/github").default;
 const Mail = require("react-feather/dist/icons/mail").default;
 const CodePen = require("react-feather/dist/icons/codepen").default;
 const Instagram = require("react-feather/dist/icons/instagram").default;
 import LinkedIn from "../extras/linkedIn";
+import Footer from "./Footer";
+
+import "../styles/about.scss";
 
 const AboutPage = () => {
 	return (
@@ -17,14 +19,14 @@ const AboutPage = () => {
 						alt="Curtis Rodgers - web developer"
 					/>
 				</div>
-				<div className="row row-intro">
+				<div className="about-row row-intro">
 					<div className="col-title">Me.</div>
 					<div className="col-body">
 						Curtis Rodgers. Visual problem solver. Currently based out of
 						Seattle.
 					</div>
 				</div>
-				<div className="row row-do">
+				<div className="about-row row-do">
 					<div className="col-title">What I do.</div>
 					<div className="col-body">
 						I am a software engineer with a passion for making things look,
@@ -34,7 +36,7 @@ const AboutPage = () => {
 						because I know that I am at my best when I am creating.
 					</div>
 				</div>
-				<div className="row row-skills">
+				<div className="about-row row-skills">
 					<div className="col-title">Skills.</div>
 					<div className="col-body">
 						<div className="sub-row">
@@ -82,7 +84,7 @@ const AboutPage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="row row-connect">
+				<div className="about-row row-connect">
 					<div className="col-title">Connect.</div>
 					<div className="col-body">
 						<div className="connect-icons">
@@ -105,6 +107,7 @@ const AboutPage = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

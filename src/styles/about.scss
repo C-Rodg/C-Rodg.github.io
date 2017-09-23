@@ -1,2 +1,34 @@
 .about-page {
+	.about-image {
+		padding: 15px;
+		text-align: center;
+		margin-bottom: 20px;
+
+		img {
+			box-shadow: 5px 5px 5px 0px #b4bfbd;
+		}
+	}
+
+	.about-row {
+		margin-bottom: 25px;
+	}
+
+	.col-title {
+		font-size: 2.2rem;
+		font-weight: 700;
+		flex-basis: 300px;
+	}
+
+	.col-body {
+		flex: 1;
+		line-height: 150%;
+	}
+
+	.sub-row {
+		margin-bottom: 15px;
+	}
+
+	.about-row {
+		display: flex;
+	}
 }

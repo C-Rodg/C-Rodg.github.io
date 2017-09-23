@@ -1,5 +1,12 @@
 import React from "react";
 
+//const Camera = require("react-feather/dist/icons/camera").default;
+const GitHub = require("react-feather/dist/icons/github").default;
+const Mail = require("react-feather/dist/icons/mail").default;
+const CodePen = require("react-feather/dist/icons/codepen").default;
+const Instagram = require("react-feather/dist/icons/instagram").default;
+import LinkedIn from "../extras/linkedIn";
+
 const AboutPage = () => {
 	return (
 		<div className="about-page">
@@ -78,8 +85,23 @@ const AboutPage = () => {
 				<div className="row row-connect">
 					<div className="col-title">Connect.</div>
 					<div className="col-body">
-						Curtis Rodgers. Visual problem solver. Currently based out of
-						Seattle.
+						<div className="connect-icons">
+							<a href="#">
+								<GitHub />
+							</a>
+							<a href="#">
+								<CodePen />
+							</a>
+							<a href="#">
+								<LinkedIn />
+							</a>
+							<a href="#">
+								<Mail />
+							</a>
+							<a href="#">
+								<Instagram />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

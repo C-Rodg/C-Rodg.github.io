@@ -67,3 +67,20 @@
 		margin: 1em 0;
 	}
 }
+
+@media screen and (max-width: 650px) {
+	.contact-page {
+		.row {
+			flex-direction: column;
+		}
+
+		.col-form {
+			margin: 0 0 25px 0;
+			width: 100%;
+		}
+
+		.col-contact {
+			width: 100%;
+		}
+	}
+}

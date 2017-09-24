@@ -1,0 +1,24 @@
+.contact-page {
+	.row {
+		padding-top: 15px;
+		display: flex;
+	}
+	.col-half {
+		width: 50%;
+	}
+
+	.form-label {
+		font-weight: 700;
+		display: block;
+	}
+
+	.contact-title {
+		font-weight: 700;
+		font-size: 2rem;
+		margin-bottom: 15px;
+	}
+
+	.title-sub {
+		margin: 1em 0;
+	}
+}

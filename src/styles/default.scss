@@ -17,6 +17,11 @@ img {
 	height: auto;
 }
 
+input,
+textarea {
+	font-size: 16px;
+}
+
 input:focus,
 input:active,
 button:focus,
@@ -55,6 +60,7 @@ main {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	width: 100%;
 }
 
 .para-link {

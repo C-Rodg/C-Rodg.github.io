@@ -13,8 +13,8 @@ const ContactPage = () => {
 		<div className="contact-page">
 			<div className="container">
 				<div className="row">
-					<div className="col-half form-col">
-						<form>
+					<div className="col-form">
+						<form action="https://formspree.io/rodgersbc@gmail.com">
 							<label htmlFor="name" className="form-label">
 								Name:
 							</label>
@@ -48,9 +48,14 @@ const ContactPage = () => {
 							<button type="submit" className="submit-btn">
 								Submit
 							</button>
+							<input
+								type="hidden"
+								name="_subject"
+								value="New request from CurtisRodgers.com"
+							/>
 						</form>
 					</div>
-					<div className="col-half">
+					<div className="col-contact">
 						<div className="contact-title">Want to work together?</div>
 						<div className="title-sub">
 							Fill out the form, or reach out to me through social media.

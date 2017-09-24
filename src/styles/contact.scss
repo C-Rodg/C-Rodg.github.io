@@ -1,15 +1,60 @@
 .contact-page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1;
+
+	.container {
+		flex: 1;
+	}
 	.row {
-		padding-top: 15px;
+		padding-top: 25px;
+		padding-bottom: 15px;
 		display: flex;
 	}
-	.col-half {
-		width: 50%;
+
+	.col-form {
+		width: 40%;
+		margin-right: 5%;
+	}
+	.col-contact {
+		width: 55%;
 	}
 
 	.form-label {
 		font-weight: 700;
 		display: block;
+		margin-bottom: 10px;
+	}
+
+	form textarea,
+	form input {
+		padding: 0.8em 0.6em;
+		outline: 0;
+		margin-bottom: 25px;
+		width: 100%;
+		border: 1px solid #ddd;
+	}
+
+	.submit-btn {
+		font-size: 1rem;
+		cursor: pointer;
+		outline: 0;
+		text-align: center;
+		vertical-align: middle;
+		background-color: #fff;
+		letter-spacing: 0.075em;
+		text-transform: uppercase;
+		border: 2px solid #000;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 20px;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
 	}
 
 	.contact-title {

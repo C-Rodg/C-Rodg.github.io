@@ -14,7 +14,10 @@ const ContactPage = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-form">
-						<form action="https://formspree.io/rodgersbc@gmail.com">
+						<form
+							action="https://formspree.io/rodgersbc@gmail.com"
+							method="POST"
+						>
 							<label htmlFor="name" className="form-label">
 								Name:
 							</label>

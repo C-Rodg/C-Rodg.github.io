@@ -1,0 +1,46 @@
+.image-tile {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	max-width: 300px;
+	margin: 10px;
+	cursor: pointer;
+
+	figcaption {
+		opacity: 0;
+		transition: opacity 0.23s ease-in-out;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(41, 128, 185, 0.9);
+		color: #fff;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		h3 {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid #fff;
+			font-weight: 300;
+			font-size: 1.7rem;
+			padding-bottom: 0.3em;
+			margin-bottom: 15px;
+		}
+
+		span {
+			font-size: 1.3rem;
+			margin-bottom: 15px;
+		}
+	}
+}

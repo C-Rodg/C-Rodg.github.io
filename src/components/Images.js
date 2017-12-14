@@ -1,11 +1,19 @@
 const Images = [
 	{
-		thumb: require("../assets/work/tileNFL.png"),
-		full: require("../assets/work/full/combine.jpg"),
+		thumb: require("../assets/work/tileCoin.png"),
+		full: require("../assets/work/full/coinbar.png"),
 		category: "Front-end Development",
 		company: "National Football League",
 		desc:
 			"Designed, then completed the front-end development for a web check-in application to be run on Microsoft Surface's for the NFL Combine. This application allowed for team general managers to track which players were in the informal interview room at a given time."
+	},
+	{
+		thumb: require("../assets/work/tileNFL.png"),
+		full: require("../assets/work/full/combine.jpg"),
+		category: "Design &amp; Development",
+		company: "Coinbar",
+		desc:
+			"Created a taskbar desktop application for Windows and MacOS that allows for users to track their favorite cryptocurrencies as well as get notifications for custom price alerts."
 	},
 	{
 		thumb: require("../assets/work/tilePrecision.png"),

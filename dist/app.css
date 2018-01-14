@@ -480,9 +480,11 @@
   max-width: 300px;
   margin: 10px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .image-tile figcaption {
+  z-index: 3;
   opacity: 0;
   -webkit-transition: opacity 0.23s ease-in-out;
   transition: opacity 0.23s ease-in-out;
@@ -528,6 +530,26 @@
 .image-tile figcaption span {
   font-size: 1.3rem;
   margin-bottom: 15px;
+}
+
+.image-tile img {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.image-tile figcaption:hover + img {
+  -webkit-transform: scale(1.07, 1.07);
+          transform: scale(1.07, 1.07);
+  -webkit-transition: -webkit-transform 1.8s ease;
+  transition: -webkit-transform 1.8s ease;
+  transition: transform 1.8s ease;
+  transition: transform 1.8s ease, -webkit-transform 1.8s ease;
 }.about-page .about-image {
   padding: 25px;
   text-align: center;

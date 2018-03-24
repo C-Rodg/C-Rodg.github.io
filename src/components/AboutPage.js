@@ -15,7 +15,7 @@ const AboutPage = () => {
 			<div className="container">
 				<div className="about-image">
 					<img
-						src={require("../assets/aboutphoto.jpg")}
+						src={require("../assets/about.png")}
 						alt="Curtis Rodgers - web developer"
 					/>
 				</div>

@@ -551,9 +551,8 @@
   transition: transform 1.8s ease;
   transition: transform 1.8s ease, -webkit-transform 1.8s ease;
 }.about-page .about-image {
-  padding: 25px;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .about-page .about-image img {

@@ -110,7 +110,7 @@ const AboutPage = () => {
 							<a href="https://codepen.io/crodg/" target="_blank">
 								<CodePen />
 							</a>
-							<a href="https://github.com/C-Rodg" target="_blank">
+							<a href="https://www.linkedin.com/in/crodg/" target="_blank">
 								<LinkedIn />
 							</a>
 							<a href="mailto:rodgersbc@gmail.com" target="_blank">

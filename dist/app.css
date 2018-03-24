@@ -533,6 +533,7 @@
 }
 
 .image-tile img {
+  opacity: 0;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -541,6 +542,12 @@
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-animation-name: imageFadeIn;
+          animation-name: imageFadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .image-tile figcaption:hover + img {
@@ -550,6 +557,26 @@
   transition: -webkit-transform 1.8s ease;
   transition: transform 1.8s ease;
   transition: transform 1.8s ease, -webkit-transform 1.8s ease;
+}
+
+@-webkit-keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }.about-page .about-image {
   text-align: center;
   margin: 20px 0;

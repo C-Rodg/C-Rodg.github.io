@@ -11,7 +11,11 @@ const ImageTile = ({ img, idx, onOpenImage }) => {
 				<span>{img.company}</span>
 				<Plus />
 			</figcaption>
-			<img src={img.thumb} alt={[img.company, img.category].join(" - ")} />
+			<img
+				src={img.thumb}
+				alt={[img.company, img.category].join(" - ")}
+				style={{ animationDelay: idx * 0.3 + "s" }}
+			/>
 		</figure>
 	);
 };

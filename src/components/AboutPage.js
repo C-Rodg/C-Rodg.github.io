@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-const GitHub = require("react-feather/dist/icons/github").default;
-const Mail = require("react-feather/dist/icons/mail").default;
-const CodePen = require("react-feather/dist/icons/codepen").default;
-const Instagram = require("react-feather/dist/icons/instagram").default;
-import LinkedIn from "../extras/linkedIn";
-import Footer from "./Footer";
+const GitHub = require('react-feather/dist/icons/github').default;
+const Mail = require('react-feather/dist/icons/mail').default;
+const CodePen = require('react-feather/dist/icons/codepen').default;
+const Instagram = require('react-feather/dist/icons/instagram').default;
+import LinkedIn from '../extras/linkedIn';
+import Footer from './Footer';
 
-import "../styles/about.scss";
+import '../styles/about.scss';
 
 const AboutPage = () => {
 	return (
@@ -15,7 +15,7 @@ const AboutPage = () => {
 			<div className="container">
 				<div className="about-image">
 					<img
-						src={require("../assets/about.png")}
+						src={require('../assets/about.png')}
 						alt="Curtis Rodgers - web developer"
 					/>
 				</div>
@@ -47,10 +47,10 @@ const AboutPage = () => {
 								each day. The web development world changes very quickly. In the
 								past, I have proven my ability to learn and adapt to new tools
 								that are required for the task at hand. Some of my favorite
-								frameworks and tools of late include <strong>Webpack</strong>,{" "}
-								<strong>React</strong>, <strong>Redux</strong>,{" "}
-								<strong>NodeJS</strong>, <strong>Express</strong>,{" "}
-								<strong>AngularJS</strong>, <strong>React Native</strong>, and{" "}
+								frameworks and tools of late include <strong>Webpack</strong>,{' '}
+								<strong>React</strong>, <strong>Redux</strong>,{' '}
+								<strong>NodeJS</strong>, <strong>Express</strong>,{' '}
+								<strong>AngularJS</strong>, <strong>React Native</strong>, and{' '}
 								<strong>Ionic</strong>. I also have a strong understanding of
 								how these tools function and how many of their patterns can be
 								implemented using <strong>vanilla Javascript</strong>.
@@ -61,24 +61,24 @@ const AboutPage = () => {
 							<div className="sub-row-body">
 								I excel at creating hand-coded, search engine optimized,
 								professional websites using HTML & CSS. One of the aspects of
-								the web that I find most exciting, as you can tell from my{" "}
+								the web that I find most exciting, as you can tell from my{' '}
 								<a
 									href="https://codepen.io/crodg/"
 									target="_blank"
 									className="para-link"
 								>
 									CodePen
-								</a>{" "}
-								or{" "}
+								</a>{' '}
+								or{' '}
 								<a
 									href="https://github.com/C-Rodg"
 									target="_blank"
 									className="para-link"
 								>
 									GitHub
-								</a>{" "}
+								</a>{' '}
 								pages, is <strong>CSS animations</strong>, which I use to bring
-								my pages to life. My real expertise though, is{" "}
+								my pages to life. My real expertise though, is{' '}
 								<strong>responsive web design</strong>, which is a necessity in
 								today's rapidly changing web world. My favorite tools which aid
 								development time and help to create DRY, maintanable code
@@ -91,9 +91,10 @@ const AboutPage = () => {
 						<div className="sub-row">
 							<div className="sub-row-title">Other Skills</div>
 							<div className="sub-row-body">
+								Mobile application development with <strong>Swift</strong>.
 								Object-oriented programming with <strong>C#</strong>. Database
-								management with <strong>SQL</strong> or <strong>NoSQL</strong>.{" "}
-								<strong>Adobe Photoshop</strong>. Version control with{" "}
+								management with <strong>SQL</strong> or <strong>NoSQL</strong>.{' '}
+								<strong>Adobe Photoshop</strong>. Version control with{' '}
 								<strong>Git</strong> or <strong>Subversion</strong>.
 								Windows/Mac/Linux operating systems.
 							</div>

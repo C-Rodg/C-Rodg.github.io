@@ -1,11 +1,11 @@
 const Images = [
 	{
-		thumb: require('../assets/work/tileNFL.png'),
-		full: require('../assets/work/full/combine.jpg'),
-		category: 'Front-end Development',
-		company: 'National Football League',
+		thumb: require('../assets/work/tileRPS.png'),
+		full: require('../assets/work/full/rps.png'),
+		category: 'iOS Application',
+		company: 'Rock, Paper, ScissARs',
 		desc:
-			"Designed, then completed the front-end development for a web check-in application to be run on Microsoft Surface's for the NFL Combine. This application allowed for team general managers to track which players were in the informal interview room at a given time."
+			'Designed and developed an iOS application that uses image classification to detect the users hand formation that they are displaying to the camera for use in an interactive Rock, Paper, Scissors game.'
 	},
 	{
 		thumb: require('../assets/work/tileCrypto.png'),
@@ -22,6 +22,14 @@ const Images = [
 		company: 'Pomobaro',
 		desc:
 			'Created a menubar desktop application for MacOS (Swift) that allows for users to maximize their work efficiency using a simple, slick pomodor timer.'
+	},
+	{
+		thumb: require('../assets/work/tileNFL.png'),
+		full: require('../assets/work/full/combine.jpg'),
+		category: 'Front-end Development',
+		company: 'National Football League',
+		desc:
+			"Designed, then completed the front-end development for a web check-in application to be run on Microsoft Surface's for the NFL Combine. This application allowed for team general managers to track which players were in the informal interview room at a given time."
 	},
 	{
 		thumb: require('../assets/work/tilePrecision.png'),

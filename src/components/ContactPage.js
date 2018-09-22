@@ -1,12 +1,13 @@
-import React from "react";
-import Footer from "./Footer";
-const GitHub = require("react-feather/dist/icons/github").default;
-const Mail = require("react-feather/dist/icons/mail").default;
-const CodePen = require("react-feather/dist/icons/codepen").default;
-const Instagram = require("react-feather/dist/icons/instagram").default;
-import LinkedIn from "../extras/linkedIn";
+import React from 'react';
+import Footer from './Footer';
+const GitHub = require('react-feather/dist/icons/github').default;
+const Mail = require('react-feather/dist/icons/mail').default;
+const CodePen = require('react-feather/dist/icons/codepen').default;
+const Instagram = require('react-feather/dist/icons/instagram').default;
+import LinkedIn from '../extras/linkedIn';
+import Dribbble from '../extras/dribbble';
 
-import "../styles/contact.scss";
+import '../styles/contact.scss';
 
 const ContactPage = () => {
 	return (
@@ -76,8 +77,11 @@ const ContactPage = () => {
 							<a href="mailto:rodgersbc@gmail.com" target="_blank">
 								<Mail />
 							</a>
-							<a href="https://www.instagram.com/c_rodg" target="_blank">
+							{/* <a href="https://www.instagram.com/c_rodg" target="_blank">
 								<Instagram color="#333" />
+							</a> */}
+							<a href="https://dribbble.com/Kobaine" target="_blank">
+								<Dribbble color="#333" />
 							</a>
 						</div>
 					</div>

@@ -162,6 +162,7 @@
 
 .welcome-page .loadingBox {
   border-top: 10px solid #3498db;
+  border-top: 10px solid #e77f67;
   width: 125px;
   margin: auto;
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/welcome.scss";
+import React from 'react';
+import '../styles/welcome.scss';
 
 const WelcomePage = () => {
 	return (
@@ -9,7 +9,7 @@ const WelcomePage = () => {
 				<div className="loadingBox grow" />
 			</div>
 			<div className="downBox slideDown" />
-			<img src={require("../assets/profile.png")} alt="Curtis Rodgers" />
+			<img src={require('../assets/me.jpg')} alt="Curtis Rodgers" />
 		</div>
 	);
 };

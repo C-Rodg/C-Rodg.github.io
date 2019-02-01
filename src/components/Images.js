@@ -32,12 +32,28 @@ const Images = [
 			"Designed, then completed the front-end development for a web check-in application to be run on Microsoft Surface's for the NFL Combine. This application allowed for team general managers to track which players were in the informal interview room at a given time."
 	},
 	{
+		thumb: require('../assets/work/tilePawssionProject.png'),
+		full: require('../assets/work/full/pawssionProject.png'),
+		category: 'Web Development',
+		company: 'PAWSsion Project',
+		desc:
+			'Handled the design and development for a non-profit dog shelter based out of Bacolod in the Philippines.'
+	},
+	{
 		thumb: require('../assets/work/tilePrecision.png'),
 		full: require('../assets/work/full/precision.jpg'),
 		category: 'Web Development',
 		company: 'Precision Body Shop & Detail',
 		desc:
 			'Created a mobile-first, responsive website for Precision Auto Body & Detailing out of San Francisco, CA.'
+	},
+	{
+		thumb: require('../assets/work/tileHandyman.png'),
+		full: require('../assets/work/full/handyman.png'),
+		category: 'Web Development',
+		company: "Scott's Handyman",
+		desc:
+			'Created a website showcasing the great work of a small town carpenter.'
 	},
 	{
 		thumb: require('../assets/work/tileTopCoat.png'),

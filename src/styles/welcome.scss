@@ -6,7 +6,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("../assets/bg.png"); // FIX loading of background image..
+	background-image: url('../assets/bg.png'); // FIX loading of background image..
 	background-size: cover;
 
 	img {
@@ -19,7 +19,7 @@
 	}
 
 	.loadingBox {
-		border-top: 10px solid #3498db;
+		border-top: 10px solid #e77f67;
 		width: 125px;
 		margin: auto;
 	}

@@ -3,7 +3,7 @@ import Footer from './Footer';
 const GitHub = require('react-feather/dist/icons/github').default;
 const Mail = require('react-feather/dist/icons/mail').default;
 const CodePen = require('react-feather/dist/icons/codepen').default;
-const Instagram = require('react-feather/dist/icons/instagram').default;
+//const Instagram = require('react-feather/dist/icons/instagram').default;
 import LinkedIn from '../extras/linkedIn';
 import Dribbble from '../extras/dribbble';
 

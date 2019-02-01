@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import "../styles/imageTile.scss";
-const Plus = require("react-feather/dist/icons/plus-square").default;
+import '../styles/imageTile.scss';
+const Plus = require('react-feather/dist/icons/plus-square').default;
 
-const ImageTile = ({ img, idx, onOpenImage }) => {
+const ImageTile = ({ img, idx, onOpenImage, row, col }) => {
+	const diagonalOffset = row + col;
 	return (
 		<figure className="image-tile" onClick={() => onOpenImage(idx)}>
 			<figcaption>
@@ -13,8 +14,8 @@ const ImageTile = ({ img, idx, onOpenImage }) => {
 			</figcaption>
 			<img
 				src={img.thumb}
-				alt={[img.company, img.category].join(" - ")}
-				style={{ animationDelay: idx * 0.3 + "s" }}
+				alt={[img.company, img.category].join(' - ')}
+				style={{ animationDelay: diagonalOffset * 0.12 + 's' }}
 			/>
 		</figure>
 	);

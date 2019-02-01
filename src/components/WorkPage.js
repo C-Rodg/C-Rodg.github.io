@@ -71,6 +71,7 @@ class WorkPage extends Component {
 				</div>
 				{this.state.openImage !== null ? (
 					<Lightbox
+						animationDisabled={false}
 						mainSrc={Images[this.state.openImage].full}
 						nextSrc={Images[(this.state.openImage + 1) % Images.length].full}
 						prevSrc={
@@ -89,7 +90,7 @@ class WorkPage extends Component {
 								openImage: (this.state.openImage + 1) % Images.length
 							})
 						}
-						discourageDownloads={true}
+						discourageDownloads={false}
 						imageTitle={[
 							Images[this.state.openImage].category,
 							Images[this.state.openImage].company

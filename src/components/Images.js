@@ -145,61 +145,6 @@ const Images = [
 		company: 'Seattle Seahawks & Sounders',
 		desc:
 			"Created a visual mockup for the login page of the Seattle Seahawks & Sounder's Recap System page."
-	},
-	{
-		key: 'scotts',
-		thumb: require('../assets/work/tileScott.png'),
-		full: require('../assets/work/full/carpentry.jpg'),
-		category: 'Web Development',
-		company: "Scott's Carpentry",
-		desc:
-			"Designed the company's new logo.  Designed and developed a website for the new business that showcases their work using Javascript plugins such as ResponsiveSlides, mixItUp, and Lightbox."
-	},
-
-	{
-		key: 'yogi',
-		thumb: require('../assets/work/tileYogi.png'),
-		full: require('../assets/work/full/yogi.jpg'),
-		category: 'Photoshop Art',
-		company: 'Yogi Goods',
-		desc:
-			'Created a title banner using Adobe Photoshop for Yogi Goods based out of Seattle, WA.'
-	},
-	{
-		key: 'cloud',
-		thumb: require('../assets/work/tileCloud.png'),
-		full: require('../assets/work/full/cloud.jpg'),
-		category: 'Logo Design',
-		company: "Curtis' Productions",
-		desc:
-			'Created a title banner with elements of flat design for a personal portfolio page.'
-	},
-	{
-		key: 'abstract',
-		thumb: require('../assets/work/tileMashup.png'),
-		full: require('../assets/work/full/mashup.jpg'),
-		category: 'Photoshop Art',
-		company: 'Abstract Art Fest',
-		desc: 'Abstract digital artwork created to showcase Adobe Photoshop skills.'
-	},
-
-	{
-		key: 'cwu',
-		thumb: require('../assets/work/tilePulse.png'),
-		full: require('../assets/work/full/pulsefull.jpg'),
-		category: 'Graphic Design',
-		company: 'Central Washington University',
-		desc:
-			"Designed a cover image for Central Washington University's Pulse magazine."
-	},
-	{
-		key: 'glow',
-		thumb: require('../assets/work/tileGlow.png'),
-		full: require('../assets/work/full/glowname.jpg'),
-		category: 'Photoshop Art',
-		company: 'Central Washington University',
-		desc:
-			'This digital artwork was created in a web design course to display Adobe Photoshop skills.'
 	}
 ];
 

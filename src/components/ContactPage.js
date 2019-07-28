@@ -48,7 +48,7 @@ const ContactPage = () => {
 								placeholder="What's on your mind?"
 								required
 							/>
-							<button type="submit" className="submit-btn">
+							<button type="submit" className="ghost-button">
 								Submit
 							</button>
 							<input

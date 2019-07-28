@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 .navigation {
 	color: $dark-text;
@@ -55,13 +55,13 @@
 
 			&::before {
 				margin-right: 10px;
-				content: "[";
+				content: '[';
 				transform: translateX(20px);
 			}
 
 			&::after {
 				margin-left: 10px;
-				content: "]";
+				content: ']';
 				transform: translateX(-20px);
 			}
 
@@ -88,7 +88,7 @@
 	}
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 810px) {
 	.navigation {
 		flex-direction: column;
 

@@ -3,128 +3,94 @@
 	overflow: hidden;
 	height: 100%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-image: url('../assets/bg.png'); // FIX loading of background image..
-	background-size: cover;
+	flex-direction: row;
 
-	img {
-		opacity: 0;
-		max-width: 300px;
-		margin: 15px;
-		border: 2px solid #fff;
-		border-radius: 50%;
-		animation: fadeIn 5.5s 2.5s 1 normal forwards;
+	.col {
+		flex-basis: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.loadingBox {
-		border-top: 10px solid #e77f67;
-		width: 125px;
-		margin: auto;
+	.col-picture {
+		img {
+			margin: 45px 25px;
+			max-height: 60vh;
+			box-shadow: 19px 20px 0px rgba(0, 0, 0, 0.98);
+		}
 	}
 
-	.spin {
-		animation: spin 3s linear 0.5s 1 normal;
-		position: absolute;
-		top: 50%;
-		left: 0;
-		right: 0;
-		margin: auto;
-		z-index: 9;
-		overflow: hidden;
-	}
+	.col-content {
+		clip-path: polygon(180px 0, 100% 0, 100% 100%, 0 100%);
+		flex-basis: calc(50% + 180px);
+		background-color: #111;
+		text-align: left;
 
-	.grow {
-		animation: grow 4s linear 3.5s 1 normal forwards;
-	}
+		.text-wrapper {
+			color: #fff;
+			margin-left: 90px;
 
-	.upBox,
-	.downBox {
-		height: 50%;
-		width: 100%;
-		position: absolute;
-		left: 0;
-		background-color: #333;
-	}
+			h1 {
+				font-weight: 300;
+				font-size: 2.5rem;
+			}
 
-	.upBox {
-		top: 0;
-	}
+			h2 {
+				font-weight: 400;
+			}
 
-	.downBox {
-		bottom: 0;
-	}
+			.white-ghost {
+				margin-top: 20px;
+				border-color: #fff;
 
-	.slideUp {
-		animation: slideUp 2s linear 5.5s 1 normal forwards;
-	}
+				&:hover {
+					background-color: #fff;
+					color: #111;
+				}
+			}
+		}
 
-	.slideDown {
-		animation: slideDown 2s linear 5.5s 1 normal forwards;
+		.from-right > * {
+			opacity: 0;
+			animation: 0.7s fromRight forwards ease-in-out;
+			animation-delay: 0.05s;
+		}
+
+		.from-right h2 {
+			animation-delay: 0.34s;
+		}
+
+		.from-right .white-ghost {
+			animation-delay: 0.5s;
+		}
 	}
 }
 
-// Welcome Loading Animations
-@keyframes grow {
+@media screen and (max-width: 850px) {
+	.welcome-page {
+		flex-direction: column;
+
+		.col-content {
+			text-align: center;
+			clip-path: polygon(0 90px, 100% 0, 100% 100%, 0 100%);
+			padding-top: 75px;
+			.text-wrapper {
+				margin: 35px;
+			}
+		}
+	}
+}
+
+@keyframes fromRight {
 	0% {
-		width: 125px;
+		transform: translateX(85px);
+		opacity: 0;
 	}
-	50% {
-		width: 100%;
-	}
-	75% {
+	70% {
 		opacity: 1;
 	}
 	100% {
-		width: 0;
-		opacity: 0;
-	}
-}
-
-@keyframes slideUp {
-	from {
-		transform: translateY(0%);
-	}
-	to {
-		transform: translateY(-100%);
-	}
-}
-
-@keyframes slideDown {
-	from {
-		transform: translateY(0%);
-	}
-	to {
-		transform: translateY(100%);
-	}
-}
-
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(720deg);
-	}
-}
-
-@keyframes fadeIn {
-	60% {
-		transform: translateY(40px);
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fadeInSlow {
-	0% {
-		opacity: 0;
-	}
-	100% {
+		transform: translateX(0px);
 		opacity: 1;
 	}
 }

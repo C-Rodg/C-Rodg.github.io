@@ -481,6 +481,9 @@
   margin: 10px;
   cursor: pointer;
   overflow: hidden;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 .image-tile figcaption {
@@ -548,6 +551,7 @@
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  display: block;
 }
 
 .image-tile figcaption:hover + img {

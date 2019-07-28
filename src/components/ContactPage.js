@@ -3,7 +3,6 @@ import Footer from './Footer';
 const GitHub = require('react-feather/dist/icons/github').default;
 const Mail = require('react-feather/dist/icons/mail').default;
 const CodePen = require('react-feather/dist/icons/codepen').default;
-//const Instagram = require('react-feather/dist/icons/instagram').default;
 import LinkedIn from '../extras/linkedIn';
 import Dribbble from '../extras/dribbble';
 
@@ -74,7 +73,10 @@ const ContactPage = () => {
 							<a href="https://www.linkedin.com/in/crodg/" target="_blank">
 								<LinkedIn />
 							</a>
-							<a href="mailto:rodgersbc@gmail.com" target="_blank">
+							<a
+								href="mailto:&#114;&#111;&#100;&#103;&#101;&#114;&#115;&#098;&#099;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+								target="_blank"
+							>
 								<Mail />
 							</a>
 							{/* <a href="https://www.instagram.com/c_rodg" target="_blank">

@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 // Overrrides
 a,
@@ -8,7 +8,21 @@ a:hover {
 	text-decoration: none;
 }
 
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
 }
 
@@ -32,7 +46,7 @@ button:active {
 // Styles
 html,
 body {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: $regular-font;
 	margin: 0;
 	padding: 0;

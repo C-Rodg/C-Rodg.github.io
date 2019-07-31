@@ -160,6 +160,10 @@
           align-items: center;
 }
 
+.welcome-page .col-picture {
+  padding: 10px;
+}
+
 .welcome-page .col-picture img {
   display: inline-block;
   margin: 45px 25px;

@@ -60,6 +60,7 @@
 
 .navigation .nav-links a::before,
 .navigation .nav-links a::after {
+  position: absolute;
   display: inline-block;
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.3s;
@@ -69,26 +70,29 @@
 }
 
 .navigation .nav-links a::before {
-  margin-right: 10px;
   content: '[';
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
 .navigation .nav-links a::after {
-  margin-left: 10px;
   content: ']';
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
 }
 
 .navigation .nav-links a:hover::before,
+.navigation .nav-links a:focus::before {
+  opacity: 1;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
 .navigation .nav-links a:hover::after,
-.navigation .nav-links a:focus::before,
 .navigation .nav-links a:focus::after {
   opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
 }
 
 .navigation .nav-links a:first-child {
@@ -157,6 +161,7 @@
 }
 
 .welcome-page .col-picture img {
+  display: inline-block;
   margin: 45px 25px;
   max-height: 60vh;
   -webkit-box-shadow: 19px 20px 0px rgba(0, 0, 0, 0.98);

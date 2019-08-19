@@ -10,16 +10,20 @@ module.exports = {
 		},
 		social: [
 			{
-				name: 'github',
-				url: 'https://github.com/'
+				url:
+					'mailto:&#114;&#111;&#100;&#103;&#101;&#114;&#115;&#098;&#099;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
 			},
 			{
-				name: 'linkedin',
-				url: 'https://linkedin.com'
+				url: 'https://github.com/C-Rodg'
 			},
 			{
-				name: 'dribbble',
-				url: 'https://dribbble.com'
+				url: 'https://codepen.io/crodg/'
+			},
+			{
+				url: 'https://www.linkedin.com/in/crodg/'
+			},
+			{
+				url: 'https://dribbble.com/Kobaine'
 			}
 		]
 	},

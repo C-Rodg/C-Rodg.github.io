@@ -18,8 +18,11 @@ My work. Come check it out.
 
 ## TODO:
 
-- add social links and svgs - *email, github, *codepen, linkedin, dribbble
 - switch out logo
+  - design new one
+- favicon
+- site metadata
+- contact form?
 - pick the content to be shown (6? items) - CryptoCap, Pomobaro, Rock Paper ScissARs, NFL Scouting Combine, PAWSsion Project, Precision Body & Detail
 - find images to represent work and write thorough descriptions
 - Javascript tooling: React, Redux, NodeJS, Webpack, Angular, Ionic, React Native

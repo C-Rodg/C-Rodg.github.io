@@ -1,0 +1,9 @@
+- name: Curtis Rodgers
+  bio: |
+    Created by Curtis Rodgers who lives and works in Los Angeles building useful things.
+    TODO:You should follow him on Twitter.
+  avatar: ./avatars/profile.png
+  featured: true
+  social:
+    - url: https://github.com
+    - url: https://twitter.com

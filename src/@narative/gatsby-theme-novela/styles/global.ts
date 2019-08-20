@@ -184,9 +184,4 @@ export const globalStyles = css`
 	img.Image__Zoom ~ div {
 		background: transparent !important;
 	}
-
-	/* a:hover .no-fill * {
-		fill: none !important;
-		stroke: #000;
-	} */
 `;

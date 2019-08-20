@@ -18,8 +18,6 @@ My work. Come check it out.
 
 ## TODO:
 
-- switch out logo
-  - design new one
 - favicon
 - site metadata
 - contact form?

@@ -7,7 +7,8 @@ import Headings from '@components/Headings';
 import Image, { ImagePlaceholder } from '@components/Image';
 
 import mediaqueries from '@styles/media';
-import { IArticle } from '@types';
+import { IArticle } from '../../types/index';
+console.log('CUSTOM ARTICLES LIST BEING USED!!'); // TODO: HERE
 
 import { GridLayoutContext } from './Articles.List.Context';
 
@@ -85,7 +86,7 @@ export default ArticlesList;
 
 const ListItem = ({ article, narrow }: ArticlesListItemProps) => {
 	if (!article) return null;
-
+	console.log(article.tech);
 	const { gridLayout } = useContext(GridLayoutContext);
 	const hasOverflow = narrow && article.title.length > 35;
 	const imageSource = narrow ? article.hero.narrow : article.hero.regular;

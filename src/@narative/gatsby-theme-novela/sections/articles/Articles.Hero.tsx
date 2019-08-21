@@ -3,10 +3,11 @@ import { graphql, useStaticQuery } from 'gatsby';
 import styled from '@emotion/styled';
 
 import Section from '@components/Section';
-import Bio from '@components/Bio';
+import Bio from '../../components/Bio';
 import Icons from '@icons';
 import mediaqueries from '@styles/media';
 import { IAuthor } from '@types';
+import SocialLinks from '../../components/SocialLinks';
 
 import { GridLayoutContext } from './Articles.List.Context';
 
@@ -19,6 +20,9 @@ const authorQuery = graphql`
 						hero {
 							heading
 							maxWidth
+						}
+						social {
+							url
 						}
 					}
 				}
@@ -33,7 +37,7 @@ function ArticlesHero({ authors }: IAuthor) {
 	);
 
 	const results = useStaticQuery(authorQuery);
-	const hero = results.site.edges[0].node.siteMetadata.hero;
+	const { hero, social } = results.site.edges[0].node.siteMetadata;
 	const tilesIsActive = hasSetGridLayout && gridLayout === 'tiles';
 	const featuredAuthor = authors.find(author => author.featured);
 
@@ -48,6 +52,8 @@ function ArticlesHero({ authors }: IAuthor) {
 		<Section relative id="Articles__Hero">
 			<HeadingContainer style={{ maxWidth: `${hero.maxWidth}px` }}>
 				<HeroHeading>{hero.heading}</HeroHeading>
+				<HeroSubHeading>Visual Problem Solver</HeroSubHeading>
+				<SocialLinks links={social} />
 			</HeadingContainer>
 			<SubheadingContainer>
 				<Bio author={featuredAuthor} />
@@ -107,7 +113,7 @@ const GridControlsContainer = styled.div`
 `;
 
 const HeadingContainer = styled.div`
-	margin: 100px 0;
+	margin: 70px 0;
 
 	${mediaqueries.desktop`
     width: 80%;
@@ -132,6 +138,15 @@ const HeroHeading = styled.h1`
 	${mediaqueries.phablet`
     font-size: 32px;
   `}
+`;
+
+const HeroSubHeading = styled.h3`
+	font-style: normal;
+	font-weight: 600;
+	color: ${p => p.theme.colors.primary};
+	font-size: 2.5rem;
+	margin: 3px 0 10px 0;
+	opacity: 0.5;
 `;
 
 const GridButton = styled.button<{ active: boolean }>`

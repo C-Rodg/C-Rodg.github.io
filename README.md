@@ -18,10 +18,9 @@ My work. Come check it out.
 
 ## TODO:
 
-- site metadata
-- contact form?
-- pick the content to be shown (6? items) - CryptoCap, Pomobaro, Rock Paper ScissARs, NFL Scouting Combine, PAWSsion Project, Precision Body & Detail
-- find images to represent work and write thorough descriptions
+- add subtitle to hero
+- add social links in header somewhere...
+- write descriptions and display technologies for each project
 - Javascript tooling: React, Redux, NodeJS, Webpack, Angular, Ionic, React Native
 - Swift, C#, SQL, HTML, CSS
 - other skills: git, subversion, word press, sketch, adobe creative cloud

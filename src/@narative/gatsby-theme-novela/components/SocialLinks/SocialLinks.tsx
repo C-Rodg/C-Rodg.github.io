@@ -46,7 +46,6 @@ function SocialLinks({ links, fill = '#73737D' }: SocialLinksProps) {
 				if (!Icon) {
 					return null;
 				}
-				console.log(fill);
 				return (
 					<SocialIconContainer
 						key={option.url}

@@ -33,5 +33,27 @@ module.exports = {
 			}
 		]
 	},
-	plugins: ['@narative/gatsby-theme-novela']
+	//plugins: ['@narative/gatsby-theme-novela']
+	plugins: [
+		{
+			resolve: '@narative/gatsby-theme-novela',
+			options: {
+				contentPosts: 'content/posts',
+				contentAuthors: 'content/authors',
+				basePath: '/'
+			}
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Curtis Rodgers`,
+				short_name: `CurtisRodgers`,
+				start_url: `/`,
+				background_color: `#fff`,
+				theme_color: `#fff`,
+				display: `standalone`,
+				icon: `src/assets/favicon.png`
+			}
+		}
+	]
 };

@@ -65,7 +65,6 @@ function SEO({
 	const results = useStaticQuery(seoQuery);
 	const site = results.allSite.edges[0].node.siteMetadata;
 	const twitter = site.social.find(option => option.name === 'twitter') || {};
-	console.log(image);
 	const fullURL = (path: string) =>
 		path ? `${site.siteUrl}${path}` : site.siteUrl;
 

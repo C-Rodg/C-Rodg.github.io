@@ -1,9 +1,11 @@
 - name: Curtis Rodgers
   bio: |
-    Created by Curtis Rodgers who lives and works in Los Angeles building useful things.
-    TODO:You should follow him on Twitter.
-  avatar: ./avatars/profile.png
+    I am a software engineer with a passion for making things look, feel, and operate better.
+    I love to push boundaries in front-end development to find new answers to old problems and to see what is really possible.
+  avatar: ./avatars/curtis-profile.png
   featured: true
   social:
-    - url: https://github.com
-    - url: https://twitter.com
+    - url: https://github.com/C-Rodg
+    - url: https://codepen.io/crodg/
+    - url: https://www.linkedin.com/in/crodg/
+    - url: https://dribbble.com/Kobaine

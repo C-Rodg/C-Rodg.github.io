@@ -18,7 +18,6 @@ My work. Come check it out.
 
 ## TODO:
 
-- favicon
 - site metadata
 - contact form?
 - pick the content to be shown (6? items) - CryptoCap, Pomobaro, Rock Paper ScissARs, NFL Scouting Combine, PAWSsion Project, Precision Body & Detail

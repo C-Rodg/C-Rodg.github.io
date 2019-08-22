@@ -1,51 +1,53 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
-import Headings from "@components/Headings";
-import Image, { ImagePlaceholder } from "@components/Image";
+import Headings from '@components/Headings';
+import Image, { ImagePlaceholder } from '@components/Image';
 
-import mediaqueries from "@styles/media";
-import { IArticle, IAuthor } from "@types";
+import mediaqueries from '@styles/media';
+import { IArticle, IAuthor } from '@types';
 
-import ArticleAuthors from "./Article.Authors";
+import { ArticlesMoreInfoMap } from '../../helpers';
+
+import ArticleAuthors from './Article.Authors';
 
 interface ArticleHeroProps {
-  article: IArticle;
-  authors: IAuthor[];
+	article: IArticle;
+	authors: IAuthor[];
 }
 
 const ArticleHero = ({ article, authors }: ArticleHeroProps) => {
-  const hasCoAUthors = authors.length > 1;
-  const hasHeroImage =
-    Object.keys(article.hero.full).length !== 0 &&
-    article.hero.full.constructor === Object;
+	const hasCoAUthors = authors.length > 1;
+	const hasHeroImage =
+		Object.keys(article.hero.full).length !== 0 &&
+		article.hero.full.constructor === Object;
 
-  return (
-    <Hero>
-      <Header>
-        <HeroHeading>{article.title}</HeroHeading>
-        <HeroSubtitle hasCoAUthors={hasCoAUthors}>
-          <ArticleAuthors authors={authors} />
-          <ArticleMeta hasCoAUthors={hasCoAUthors}>
-            {article.date} · {article.timeToRead} min read
-          </ArticleMeta>
-        </HeroSubtitle>
-      </Header>
-      <HeroImage id="ArticleImage__Hero">
-        {hasHeroImage ? (
-          <Image src={article.hero.full} />
-        ) : (
-          <ImagePlaceholder />
-        )}
-      </HeroImage>
-    </Hero>
-  );
+	return (
+		<Hero>
+			<Header>
+				<HeroHeading>{article.title}</HeroHeading>
+				<HeroSubtitle hasCoAUthors={hasCoAUthors}>
+					<ArticleAuthors authors={authors} />
+					<ArticleMeta hasCoAUthors={hasCoAUthors}>
+						{ArticlesMoreInfoMap[article.slug]}
+					</ArticleMeta>
+				</HeroSubtitle>
+			</Header>
+			<HeroImage id="ArticleImage__Hero">
+				{hasHeroImage ? (
+					<Image src={article.hero.full} />
+				) : (
+					<ImagePlaceholder />
+				)}
+			</HeroImage>
+		</Hero>
+	);
 };
 
 export default ArticleHero;
 
 const Hero = styled.div`
-  ${p => mediaqueries.phablet`
+	${p => mediaqueries.phablet`
     &::before {
       content: "";
       width: 100vw;
@@ -73,9 +75,9 @@ const Hero = styled.div`
 `;
 
 const ArticleMeta = styled.div<{ hasCoAUthors: boolean }>`
-  margin-left: ${p => (p.hasCoAUthors ? "10px" : "0")};
+	margin-left: ${p => (p.hasCoAUthors ? '10px' : '0')};
 
-  ${mediaqueries.phablet`
+	${mediaqueries.phablet`
     margin-left: 0;
   `}
 `;
@@ -110,34 +112,34 @@ const Header = styled.header`
 `;
 
 const HeroHeading = styled(Headings.h1)`
-  font-size: 48px;
-  font-family: ${p => p.theme.fonts.serif};
-  margin-bottom: 25px;
-  font-weight: bold;
-  line-height: 1.32;
+	font-size: 48px;
+	font-family: ${p => p.theme.fonts.serif};
+	margin-bottom: 25px;
+	font-weight: bold;
+	line-height: 1.32;
 
-  ${mediaqueries.tablet`
+	${mediaqueries.tablet`
     margin-bottom: 20px;
     font-size: 36px;
   `}
 
-  ${mediaqueries.phablet`
+	${mediaqueries.phablet`
     font-size: 32px;
   `}
 `;
 
 const HeroSubtitle = styled.div<{ hasCoAUthors: boolean }>`
-  position: relative;
-  display: flex;
-  font-size: 18px;
-  color: ${p => p.theme.colors.grey};
+	position: relative;
+	display: flex;
+	font-size: 18px;
+	color: ${p => p.theme.colors.grey};
 
-  ${p => mediaqueries.phablet`
+	${p => mediaqueries.phablet`
     font-size: 14px;
     flex-direction: column;
 
     ${p.hasCoAUthors &&
-      `
+			`
         &::before {
           content: '';
           position: absolute;
@@ -161,21 +163,21 @@ const HeroSubtitle = styled.div<{ hasCoAUthors: boolean }>`
 `;
 
 const HeroImage = styled.div`
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 424px;
-  max-width: 944px;
-  overflow: hidden;
-  margin: 0 auto;
-  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.2),
-    0 18px 36px -18px rgba(0, 0, 0, 0.22);
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 424px;
+	max-width: 944px;
+	overflow: hidden;
+	margin: 0 auto;
+	box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.2),
+		0 18px 36px -18px rgba(0, 0, 0, 0.22);
 
-  ${mediaqueries.tablet`
+	${mediaqueries.tablet`
     max-width: 100%;
   `}
 
-  ${mediaqueries.phablet`
+	${mediaqueries.phablet`
     margin: 0 auto;
     width: calc(100vw - 40px);
     height: 220px;

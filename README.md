@@ -18,12 +18,11 @@ My work. Come check it out.
 
 ## TODO:
 
-- add subtitle to hero
-- add social links in header somewhere...
 - write descriptions and display technologies for each project
 - Javascript tooling: React, Redux, NodeJS, Webpack, Angular, Ionic, React Native
 - Swift, C#, SQL, HTML, CSS
 - other skills: git, subversion, word press, sketch, adobe creative cloud
+- fix hero images on product pages
 
 ## Creator
 

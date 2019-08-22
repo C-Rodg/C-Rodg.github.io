@@ -7,7 +7,8 @@ import Headings from '@components/Headings';
 import Image, { ImagePlaceholder } from '../../components/Image';
 
 import mediaqueries from '@styles/media';
-import { IArticle } from '../../types/index';
+import { IArticle } from '@types';
+import { ArticlesMoreInfoMap } from '../../helpers';
 
 import { GridLayoutContext } from './Articles.List.Context';
 
@@ -34,17 +35,6 @@ interface ArticlesListItemProps {
 	article: IArticle;
 	narrow?: boolean;
 }
-
-// Custom:
-// Mapping the article slugs to the more information portion of the article items
-const ArticlesMoreInfoMap = {
-	'/cryptocap': 'MacOS desktop application',
-	'/pomobaro': 'MacOS desktop application',
-	'/rock-paper-scissars': 'iOS application',
-	'/pawssion-project': 'Gatsby powered web site',
-	'/nfl-scouting-combine': 'Single-page application',
-	'/precision-auto-body-detail': 'Responsive web site'
-};
 
 function ArticlesList({ articles, alwaysShowAllDetails }: ArticlesListProps) {
 	if (!articles) return null;

@@ -4,11 +4,10 @@ import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 
 import Headings from '@components/Headings';
-import Image, { ImagePlaceholder } from '@components/Image';
+import Image, { ImagePlaceholder } from '../../components/Image';
 
 import mediaqueries from '@styles/media';
 import { IArticle } from '../../types/index';
-console.log('CUSTOM ARTICLES LIST BEING USED!!'); // TODO: HERE
 
 import { GridLayoutContext } from './Articles.List.Context';
 
@@ -35,6 +34,17 @@ interface ArticlesListItemProps {
 	article: IArticle;
 	narrow?: boolean;
 }
+
+// Custom:
+// Mapping the article slugs to the more information portion of the article items
+const ArticlesMoreInfoMap = {
+	'/cryptocap': 'MacOS desktop application',
+	'/pomobaro': 'MacOS desktop application',
+	'/rock-paper-scissars': 'iOS application',
+	'/pawssion-project': 'Gatsby powered web site',
+	'/nfl-scouting-combine': 'Single-page application',
+	'/precision-auto-body-detail': 'Responsive web site'
+};
 
 function ArticlesList({ articles, alwaysShowAllDetails }: ArticlesListProps) {
 	if (!articles) return null;
@@ -86,7 +96,6 @@ export default ArticlesList;
 
 const ListItem = ({ article, narrow }: ArticlesListItemProps) => {
 	if (!article) return null;
-	console.log(article.tech);
 	const { gridLayout } = useContext(GridLayoutContext);
 	const hasOverflow = narrow && article.title.length > 35;
 	const imageSource = narrow ? article.hero.narrow : article.hero.regular;
@@ -110,9 +119,7 @@ const ListItem = ({ article, narrow }: ArticlesListItemProps) => {
 					>
 						{article.excerpt}
 					</Excerpt>
-					<MetaData>
-						{article.date} · {article.timeToRead} min read
-					</MetaData>
+					<MetaData>{ArticlesMoreInfoMap[article.slug]}</MetaData>
 				</div>
 			</Item>
 		</ArticleLink>

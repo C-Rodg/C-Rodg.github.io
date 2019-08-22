@@ -38,7 +38,6 @@ export interface IAuthor {
 }
 
 export interface IArticle {
-	tech?: string;
 	slug: string;
 	authors: IAuthor[];
 	excerpt: string;

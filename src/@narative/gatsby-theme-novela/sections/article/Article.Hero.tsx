@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import Headings from '@components/Headings';
-import Image, { ImagePlaceholder } from '@components/Image';
+import Image, { ImagePlaceholder } from '../../components/Image';
 
 import mediaqueries from '@styles/media';
 import { IArticle, IAuthor } from '@types';
@@ -85,7 +85,7 @@ const ArticleMeta = styled.div<{ hasCoAUthors: boolean }>`
 const Header = styled.header`
   position: relative;
   z-index: 10;
-  margin:100px auto 120px;
+  margin:60px auto 80px;
   padding-left: 68px;
   max-width: 749px;
 
@@ -166,7 +166,7 @@ const HeroImage = styled.div`
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	height: 424px;
+	height: auto;
 	max-width: 944px;
 	overflow: hidden;
 	margin: 0 auto;

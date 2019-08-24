@@ -2,23 +2,16 @@
 
 My work. Come check it out.
 
-## Details
+## About
 
-- [My journey](https://curtisrodgers.com/dist/index.html#/about)
-- [My work](https://curtisrodgers.com/dist/index.html#/work)
-- [My contact form](https://curtisrodgers.com/dist/index.html#/contact)
+I am a software engineer with a passion for making things look, feel, and operate better. I love to push boundaries in front-end development to find new answers to old problems and to see what is really possible.
 
 ## Accounts
 
 - [GitHub](https://github.com/C-Rodg)
 - [CodePen](https://codepen.io/crodg/)
 - [LinkedIn](https://www.linkedin.com/in/crodg/)
-- [Email](mailto:rodgersbc@gmail.com)
 - [Dribbble](https://dribbble.com/Kobaine)
-
-## TODO:
-
-- fix hero images on product pages
 
 ## Creator
 

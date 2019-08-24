@@ -33,7 +33,6 @@ module.exports = {
 			}
 		]
 	},
-	//plugins: ['@narative/gatsby-theme-novela']
 	plugins: [
 		{
 			resolve: '@narative/gatsby-theme-novela',

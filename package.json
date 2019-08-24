@@ -1,10 +1,19 @@
 {
 	"name": "curtis-dev",
+	"description": "The personal portfolio of Curtis Rodgers.",
 	"private": false,
 	"version": "1.0.0",
 	"license": "MIT",
+	"keywords": [
+		"Curtis",
+		"Javascript",
+		"engineer",
+		"developer",
+		"Swift"
+	],
+	"author": "<C-Rodg@users.noreply.github.com>",
 	"scripts": {
-		"build": "gatsby build && cp -R _redirects public/",
+		"build": "gatsby build",
 		"dev": "gatsby develop",
 		"clean": "gatsby clean"
 	},

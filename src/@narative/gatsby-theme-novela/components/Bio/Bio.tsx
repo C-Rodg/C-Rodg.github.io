@@ -26,7 +26,7 @@ function Bio({ author }: IAuthor) {
 					target="_blank"
 					rel="noopener"
 					data-a11y="false"
-					href="mailto:&#114;&#111;&#100;&#103;&#101;&#114;&#115;&#098;&#099;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+					href="https://www.linkedin.com/in/crodg/"
 				>
 					Let's Connect!
 				</ConnectLink>

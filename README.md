@@ -13,6 +13,11 @@ I am a software engineer with a passion for making things look, feel, and operat
 - [LinkedIn](https://www.linkedin.com/in/crodg/)
 - [Dribbble](https://dribbble.com/Kobaine)
 
+## TODO:
+
+- Fix image height issue (fork code?)
+- Fix for Pomobaro, Cryptocap, RPS sites
+
 ## Creator
 
 Curtis Rodgers (me) : https://curtisrodgers.com

@@ -8,8 +8,8 @@ import NavigationHeader from '../Navigation/Navigation.Header';
 import ArticlesContextProvider from '@narative/gatsby-theme-novela/src/sections/articles/Articles.List.Context';
 
 import { globalStyles } from '@styles';
-import theme from '@narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui';
-import colors from '@narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui/colors';
+import theme from '../../gatsby-plugin-theme-ui';
+import colors from '../../gatsby-plugin-theme-ui/colors';
 
 interface LayoutProps {
 	children: React.ReactChild;
@@ -21,7 +21,7 @@ interface LayoutProps {
  * which hides a lot of the mess we need to create our Desktop and Mobile experiences.
  */
 function Layout({ children }: LayoutProps) {
-	const [colorMode] = useColorMode();
+	const [colorMode] = useColorMode(theme.initialColorMode);
 	let finalTheme = theme;
 
 	if (colorMode === 'dark') {

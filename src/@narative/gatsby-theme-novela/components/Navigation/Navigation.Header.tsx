@@ -18,7 +18,7 @@ function NavigationHeader() {
 	const [showBackArrow, setShowBackArrow] = useState<boolean>(false);
 	const [previousPath, setPreviousPath] = useState<string>('/');
 
-	const [colorMode] = useColorMode();
+	const [colorMode] = useColorMode('light');
 	const fill = colorMode === 'dark' ? '#fff' : '#000';
 
 	useEffect(() => {

@@ -20,7 +20,6 @@ function NavigationHeader() {
 
 	const [colorMode] = useColorMode('light');
 	const fill = colorMode === 'dark' ? '#fff' : '#000';
-
 	useEffect(() => {
 		const { width } = getWindowDimensions();
 		const phablet = getBreakpointFromTheme('phablet');

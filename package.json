@@ -21,7 +21,6 @@
 		"@narative/gatsby-theme-novela": "^0.3.7",
 		"gatsby": "^2.13.67",
 		"gatsby-plugin-manifest": "^2.2.6",
-		"gatsby-plugin-theme-ui": "^0.2.34",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0"
 	}

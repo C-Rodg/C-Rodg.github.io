@@ -42,7 +42,6 @@ function Article({ pageContext, location }) {
 	const name = results.allSite.edges[0].node.siteMetadata.name;
 
 	const { article, authors, next } = pageContext;
-
 	useEffect(() => {
 		const calculateBodySize = throttle(() => {
 			const contentSection = contentSectionRef.current;

@@ -10,10 +10,14 @@ import ArticlesHero from '../sections/articles/Articles.Hero';
 import ArticlesList from '../sections/articles/Articles.List';
 
 function ArticlesPage({ location, pageContext }) {
-	window.localStorage.setItem('theme-ui-color-mode', 'light');
+	// SET INITIAL PAGE TO BE WHITE NO MATTER DARK MODE
+	if (typeof window !== 'undefined') {
+		window.localStorage.setItem('theme-ui-color-mode', 'light');
+		console.log('Light mode enabled.');
+	}
+
 	const articles = pageContext.group;
 	const authors = pageContext.additionalContext.authors;
-
 	return (
 		<Layout>
 			<SEO pathname={location.pathname} />

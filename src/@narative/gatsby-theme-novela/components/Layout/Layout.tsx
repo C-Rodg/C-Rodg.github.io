@@ -21,7 +21,7 @@ interface LayoutProps {
  * which hides a lot of the mess we need to create our Desktop and Mobile experiences.
  */
 function Layout({ children }: LayoutProps) {
-	const [colorMode] = useColorMode(theme.initialColorMode);
+	const [colorMode] = useColorMode();
 	let finalTheme = theme;
 
 	if (colorMode === 'dark') {

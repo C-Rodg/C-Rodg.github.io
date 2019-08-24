@@ -11,10 +11,12 @@ import ArticlesList from '../sections/articles/Articles.List';
 
 function ArticlesPage({ location, pageContext }) {
 	// SET INITIAL PAGE TO BE WHITE NO MATTER DARK MODE
-	// if (typeof window !== 'undefined') {
-	// 	window.localStorage.setItem('theme-ui-color-mode', 'light');
-	// 	console.log('Light mode enabled.');
-	// }
+	if (typeof window !== 'undefined') {
+		window.localStorage.setItem('theme-ui-color-mode', 'light');
+		console.log('Light mode enabled.');
+	} else {
+		console.log('Nothing set...');
+	}
 
 	const articles = pageContext.group;
 	const authors = pageContext.additionalContext.authors;

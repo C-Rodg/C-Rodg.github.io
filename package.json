@@ -18,7 +18,7 @@
 		"clean": "gatsby clean"
 	},
 	"dependencies": {
-		"@narative/gatsby-theme-novela": "^0.3.7",
+		"@narative/gatsby-theme-novela": "^0.4.3",
 		"gatsby": "^2.13.67",
 		"gatsby-plugin-manifest": "^2.2.6",
 		"react": "^16.9.0",

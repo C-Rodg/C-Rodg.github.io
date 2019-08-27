@@ -19,9 +19,11 @@ function Bio({ author }: IAuthor) {
 				</BioAvatarInner>
 			</BioAvatar>
 			<BioText>
-				{author.bio}
+				<span className="specialties">
+					Javascript • Swift • HTML • CSS • C# • React • Flux • NodeJS
+				</span>
+				<span className="bio-text">{author.bio}</span>
 
-				<br />
 				<ConnectLink
 					target="_blank"
 					rel="noopener"
@@ -52,7 +54,7 @@ const BioAvatar = styled.div`
 	border-radius: 50%;
 	background: rgba(0, 0, 0, 0.25);
 	margin-right: 16px;
-	margin: 10px 26px 10px 10px;
+	margin: -25px 26px 10px 10px;
 
 	&::after {
 		content: '';
@@ -90,6 +92,16 @@ const BioText = styled.p`
 	font-size: 14px;
 	line-height: 1.45;
 	color: ${p => p.theme.colors.grey};
+
+	.bio-text,
+	.specialties {
+		display: block;
+	}
+
+	.specialties {
+		font-size: 10px;
+		margin-bottom: 6px;
+	}
 `;
 
 const ConnectLink = styled.a`
@@ -98,7 +110,7 @@ const ConnectLink = styled.a`
 	color: ${p => p.theme.colors.primary};
 	border: 1px solid ${p => p.theme.colors.primary};
 	padding: 10px 15px;
-	margin-top: 12px;
+	margin-top: 9px;
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 2px;

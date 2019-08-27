@@ -99,7 +99,8 @@ const SubheadingContainer = styled.div`
   `};
 
 	${mediaqueries.phablet`
-    display: none;
+	display: block;
+	margin-bottom: 60px;
   `};
 `;
 

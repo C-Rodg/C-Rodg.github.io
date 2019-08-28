@@ -14,7 +14,11 @@ function ArticlesPage({ location, pageContext }) {
 	const articles = pageContext.group;
 	return (
 		<Layout>
-			<SEO pathname={location.pathname} image="/icons/icon-512x512.png" />
+			<SEO
+				pathname={location.pathname}
+				image="/icons/icon-512x512.png"
+				url="https://curtisrodgers.com"
+			/>
 			<Section narrow>
 				<AuthorHero author={author} />
 				<AuthorArticles articles={articles} />

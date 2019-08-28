@@ -20,9 +20,9 @@ Javascript • NodeJS • React • Flux • Swift • C# • HTML • CSS
 
 ## Products
 
-- [Pomobaro](https://curtisrodgers.com/Pomobaro/) [[App Store](https://itunes.apple.com/app/pomobaro/id1415437485)]
-- [CryptoCap](https://curtisrodgers.com/CryptoCap/) [[App Store](https://itunes.apple.com/app/cryptocap/id1334581292)]
-- [Rock, Paper, ScissARs](https://curtisrodgers.com/Rock-Paper-ScissARs/) [[App Store](https://itunes.apple.com/app/rock-paper-scissars/id1433851474)]
+- [Pomobaro](https://pomobaro.curtisrodgers.com) [[App Store](https://itunes.apple.com/app/pomobaro/id1415437485)]
+- [CryptoCap](https://cryptocap.curtisrodgers.com) [[App Store](https://itunes.apple.com/app/cryptocap/id1334581292)]
+- [Rock, Paper, ScissARs](https://rock-paper-scissars.curtisrodgers.com) [[App Store](https://itunes.apple.com/app/rock-paper-scissars/id1433851474)]
 
 ## Creator
 

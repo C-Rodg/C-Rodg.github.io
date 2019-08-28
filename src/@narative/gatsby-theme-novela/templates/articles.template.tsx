@@ -9,6 +9,8 @@ import Paginator from '@components/Navigation/Navigation.Paginator';
 import ArticlesHero from '../sections/articles/Articles.Hero';
 import ArticlesList from '../sections/articles/Articles.List';
 
+import ogImage from '../../../assets/favicon.png';
+
 function ArticlesPage({ location, pageContext }) {
 	// SET INITIAL PAGE TO BE WHITE NO MATTER DARK MODE
 	if (typeof window !== 'undefined') {
@@ -19,7 +21,7 @@ function ArticlesPage({ location, pageContext }) {
 	const authors = pageContext.additionalContext.authors;
 	return (
 		<Layout>
-			<SEO pathname={location.pathname} />
+			<SEO pathname={location.pathname} image={ogImage} />
 			<ArticlesHero authors={authors} />
 			<Section narrow>
 				<ArticlesList articles={articles} />

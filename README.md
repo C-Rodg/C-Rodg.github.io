@@ -1,6 +1,6 @@
 # Curtis Rodgers' Personal Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d1ae1f85-ee48-4d09-9577-e99d68636476/deploy-status)](https://app.netlify.com/sites/admiring-carson-bbdbba/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d1ae1f85-ee48-4d09-9577-e99d68636476/deploy-status)](https://app.netlify.com/sites/cr-portfolio/deploys)
 
 My work. Come check it out.
 

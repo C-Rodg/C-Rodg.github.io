@@ -9,14 +9,12 @@ import Paginator from '@components/Navigation/Navigation.Paginator';
 import AuthorHero from '../sections/author/Author.Hero';
 import AuthorArticles from '../sections/author/Author.Articles';
 
-import ogImage from '../../../assets/favicon.png';
-
 function ArticlesPage({ location, pageContext }) {
 	const author = pageContext.additionalContext.author;
 	const articles = pageContext.group;
 	return (
 		<Layout>
-			<SEO pathname={location.pathname} image={ogImage} />
+			<SEO pathname={location.pathname} image="/icons/icon-512x512.png" />
 			<Section narrow>
 				<AuthorHero author={author} />
 				<AuthorArticles articles={articles} />

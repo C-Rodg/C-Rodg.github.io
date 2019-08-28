@@ -21,7 +21,7 @@ function ArticlesPage({ location, pageContext }) {
 	const authors = pageContext.additionalContext.authors;
 	return (
 		<Layout>
-			<SEO pathname={location.pathname} image={ogImage} />
+			<SEO pathname={location.pathname} image="/icons/icon-512x512.png" />
 			<ArticlesHero authors={authors} />
 			<Section narrow>
 				<ArticlesList articles={articles} />
